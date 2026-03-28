@@ -2,17 +2,11 @@ provider "aws" {
   region = "ap-south-1"   # Mumbai region
 }
 
-resource "aws_vpc" "my_vpc" {
+resource "aws_vpc" "my_vpc3" {
   cidr_block = "10.0.0.0/16"
 
   tags = {
-    Name = "MyFirstVPC"
+    Name = "MyThirdVPC"
   }
 }
-resource "aws_vpc" "my_vpc2" {
-  cidr_block = "10.0.0.0/16"
 
-  tags = {
-    Name = "MySecondVPC"
-  }
-}
