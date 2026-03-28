@@ -9,4 +9,10 @@ resource "aws_vpc" "my_vpc3" {
     Name = "MyThirdVPC"
   }
 }
+resource "aws_vpc" "my_vpc1" {
+  cidr_block = "10.0.0.0/16"
 
+  tags = {
+    Name = "MyFirstVPC"
+  }
+}
