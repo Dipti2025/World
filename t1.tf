@@ -24,7 +24,7 @@ resource "aws_vpc" "my_vpc2" {
     Name = "MysecondVPC"
   }
 }
-resource "aws_vpc" "my_vpc10" {
+resource "aws_vpc" "my_vpc10": {
   cidr_block = "10.0.0.0/16"
 
   tags = {
